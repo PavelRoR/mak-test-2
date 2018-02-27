@@ -1,10 +1,4 @@
 @font-face {
-	font-family: 'GagalinRegular';
-	src: url('../fonts/GagalinRegular.eot');
-	src: url('../fonts/GagalinRegular.eot') format('embedded-opentype'), url('../fonts/GagalinRegular.woff2') format('woff2'), url('../fonts/GagalinRegular.woff') format('woff'), url('../fonts/GagalinRegular.ttf') format('truetype'), url('../fonts/GagalinRegular.svg#GagalinRegular') format('svg');
-}
-
-@font-face {
 	font-family: 'HelveticaNeueCyrBold';
 	src: url('../fonts/HelveticaNeueCyrBold.eot');
 	src: url('../fonts/HelveticaNeueCyrBold.eot') format('embedded-opentype'), url('../fonts/HelveticaNeueCyrBold.woff2') format('woff2'), url('../fonts/HelveticaNeueCyrBold.woff') format('woff'), url('../fonts/HelveticaNeueCyrBold.ttf') format('truetype'), url('../fonts/HelveticaNeueCyrBold.svg#HelveticaNeueCyrBold') format('svg');
@@ -32,57 +26,57 @@
 	position: relative;
 }
 
-h1 {
-	font-family: 'GagalinRegular';
-	color: #a11b1b;
-	font-size: 44px;
-	margin-bottom: 8px;
-}
-
-p {
+.button {
 	font-size: 22px;
-	font-family: 'HelveticaNeueCyrMedium', Arial, sans-serif;
-}
-
-.button,
-.button:focus {
 	display: block;
-	background-color: rgb(47, 157, 1);
-	width: 306px;
-	height: 69px;
-	font-size: 27px;
-	border-radius: 35px;
-	font-family: "GagalinRegular";
+	background-color: rgb(114, 187, 114);
+	width: 320px;
+    height: 82px;
+	border: 10px solid rgb(255, 255, 255);
+	outline: 1px solid rgb(114, 187, 114);
+	font-family: "HelveticaNeueCyrMedium";
 	color: rgb(255, 255, 255);
-	line-height: 69px;
+	text-transform: uppercase;
+	line-height: 60px;
 	text-align: center;
-	margin: 65px auto 0;
+	transition: all .4s ease;
 	-webkit-transition: all .4s ease;
 	-moz-transition: all .4s ease;
 	transition: all .4s ease;
-	text-decoration: none;
-	border: 0;
+	margin: 50px auto 0;
+	letter-spacing: 4.3px;
 }
 
 .button:hover {
 	color: rgb(255, 255, 255);
 	text-decoration: none;
-	background-color: rgb(30, 101, 0);
-	-webkit-transition: all .4s ease;
-	-moz-transition: all .4s ease;
-	transition: all .4s ease;
+	outline: 1px solid rgb(86, 118, 227);
+	box-shadow: 0 0 0 50px inset rgb(86, 118, 227);
+	-webkit-transform: scale(.95);
+	-moz-transform: scale(.95);
+	-ms-transform: scale(.95);
+	-o-transform: scale(.95);
+	transform: scale(.95);
+letter-spacing: 3.3px;
+	-webkit-transition: all .4s ease-in-out;
+	-moz-transition: all .4s ease-in-out;
+	transition: all .4s ease-in-out;
+}
+
+.button:focus {
+	text-decoration: none;
+	color: #fff;
 }
 
 #header {
 	padding: 27px 20px 18px;
 	overflow: hidden;
-	box-shadow: 0px 0px 16px 3px rgba(0, 0, 0, 0.27);
 	position: absolute;
 	top: 0;
 	left: 0;
 	right: 0;
 	width: 100%;
-	background-color: #fff;
+	background-color: transparent;
 	z-index: 9;
 }
 
@@ -96,7 +90,7 @@ p {
 }
 
 #contacts .fa {
-	color: #ee0101;
+	color: #232222;
 	font-size: 20px;
 	margin: 0 11px 0 58px
 }
@@ -117,25 +111,19 @@ p {
 /*#contacts .fa + span:hover {text-decoration: underline}*/
 
 .first {
-	background-repeat: no-repeat;
-	background-position: center;
-	-webkit-background-size: cover;
-	background-size: cover;
-	padding: 90px 0 38px;
+	padding: 106px 0 38px;
 	width: 100%;
 	min-height: 400px;
 	overflow: hidden;
 }
 
 .first p {
-	text-align: left;
-	font-size: 24px;
-	font-family: 'HelveticaNeueCyrBold';
+	font-size: 20px;
+	font-family: "HelveticaNeueCyrMedium";
 	color: rgb(42, 42, 42);
-	line-height: 1.3;
-	width: 650px;
-	position: relative;
-	z-index: 9;
+	line-height: 1.5;
+	text-align: left;
+
 }
 
 .first img {
@@ -144,12 +132,12 @@ p {
 }
 
 #main {
-	background-image: url(../img/main_bg.jpg);
-	padding-top: 0;
+	background-color: #e2ebea;
+	padding-bottom: 0;
 }
 
 #first {
-	background-image: url(../img/bg_1.jpg);
+	background-color: #e2ebea;
 }
 
 #second {
@@ -176,11 +164,38 @@ p {
 	background-image: url(../img/bg_7.jpg);
 }
 
-#main .pre {
-	margin: 140px 0 35px;
-	width: 280px;
+#main .janna_title {
+	font-size: 23px;
+	font-family: "HelveticaNeueCyrMedium";
+	color: rgb(253, 251, 251);
+	line-height: 53px;
+	text-align: center;
+	background-color: rgb(45, 45, 45);
+	width: 457px;
+	height: 53px;
 	position: relative;
-	z-index: 2;
+	z-index: 8
+}
+
+
+#main .pre {
+	font-size: 20px;
+	font-family: "HelveticaNeueCyrMedium";
+	color: rgb(42, 42, 42);
+	text-transform: uppercase;
+	line-height: 1.5;
+	text-align: left;
+	margin: 47px 0 16px;
+	width: 455px;
+}
+
+#main h1 {
+	margin: 0;
+	font-size: 44px;
+	font-family: "HelveticaNeueCyrBold";
+	color: rgb(86, 118, 227);
+	line-height: 1.364;
+	text-align: left;
 }
 
 #main_shape {
@@ -189,9 +204,20 @@ p {
 	z-index: 1;
 }
 
+.main_btn {
+	margin: 0 auto 40px;
+}
+
 #main_pic {
-	right: 18px;
-	bottom: -62px;
+    right: -20px;
+    bottom: -214px;
+}
+
+#main_pic_2 {
+top: -224px;
+    right: auto;
+    left: -191px;
+	z-index: 0;
 }
 
 #pic_1 {
@@ -229,9 +255,14 @@ p {
 }
 
 #main + .second p {
+	font-size: 22px;
+	font-family: "HelveticaNeueCyrRoman";
+	color: rgb(48, 48, 48);
+	line-height: 1.3;
 	text-align: center;
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 }
+
 
 .choice {
 	width: 900px;
@@ -494,7 +525,7 @@ p {
 		bottom: auto;
 		top: 50px;
 	}
-	.left_container .mail{
+	.left_container .mail {
 		text-align-last: left
 	}
 }
@@ -531,10 +562,10 @@ p {
 		height: auto;
 		position: relative;
 	}
-	#end .container{
+	#end .container {
 		height: auto;
 		overflow: hidden;
-/*		position: relative;*/
+		/*		position: relative;*/
 	}
 	.left_container {
 		display: block;
@@ -549,7 +580,7 @@ p {
 		bottom: 0;
 		top: auto;
 		left: 0;
-right: 0;
+		right: 0;
 	}
 	#janna_back {
 		top: auto;
@@ -599,6 +630,7 @@ right: 0;
 		bottom: -40px;
 	}
 }
+
 @media screen and (max-width: 525px) {
 	.mail,
 	.form_newsletter .button {
@@ -658,9 +690,9 @@ right: 0;
 		margin-top: 30px;
 		font-size: 24px;
 	}
-	
+
 	#end {
-    padding-top: 150px;
+		padding-top: 150px;
 	}
 	#end h1 {
 		font-size: 34px;
@@ -675,7 +707,7 @@ right: 0;
 		margin-top: 20px;
 	}
 	#janna,
-	#janna_back{
+	#janna_back {
 		width: 100%;
 	}
 }
