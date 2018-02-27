@@ -229,7 +229,7 @@
 
 #main_pic {
 	right: -20px;
-	bottom: -214px;
+	bottom: -45px;
 }
 
 #main_pic_2,
@@ -377,10 +377,12 @@
 	line-height: 1.6;
 
 }
+
 #end .infront_submit span {
 	font-family: "HelveticaNeueCyrBold";
 	color: rgb(73, 95, 168);
 }
+
 #end h1 {
 	margin-top: 16px;
 	font-size: 44px;
@@ -425,7 +427,8 @@
 
 @media screen and (min-width: 1400px) {
 	#janna {
-		width: auto;
+		width: 70%;
+		right: -400px;
 	}
 }
 
@@ -433,10 +436,7 @@
 	.container {
 		width: 1400px;
 	}
-	#janna {
-		width: 700px;
-		right: -100px;
-	}
+
 	#end .pre {
 		font-size: 40px;
 	}
@@ -459,7 +459,7 @@
 	.form_newsletter .button {
 		width: 500px;
 		height: 80px;
-		font-size: 37px;
+		font-size: 31px;
 	}
 	.first {
 		background-repeat: repeat;
@@ -475,7 +475,7 @@
 	}
 	.button,
 	.button:focus {
-		font-size: 37px;
+		font-size: 31px;
 		width: 450px
 	}
 	.choice {
@@ -491,7 +491,7 @@
 
 @media screen and (min-width: 2500px) {
 	#janna {
-		width: 70%;
+		width: 60%;
 		right: -320px;
 	}
 }
@@ -506,11 +506,8 @@
 	#contacts .fa {
 		margin: 0 11px 0 20px;
 	}
-	.first h1 {
-		width: 50%;
-	}
 	.first p {
-		width: 600px;
+		width: 423px;
 	}
 	#pic_1,
 	#pic_2,
@@ -518,7 +515,7 @@
 	#pic_4,
 	#pic_5,
 	#pic_6 {
-		right: 10px;
+		right: -60px;
 	}
 	.choice {
 		width: 90%;
@@ -533,12 +530,23 @@
 		left: 5px;
 	}
 	#janna {
-		width: 400px;
 		bottom: auto;
 		top: 50px;
 	}
 	.left_container .mail {
 		text-align-last: left
+	}
+	#main_pic_2,
+	#pic_1_1,
+	#pic_2_2,
+	#pic_3_2,
+	#pic_4_2,
+	#pic_5_2 {
+		left: -150px;
+		top: -230px;
+	}
+	#main_pic {
+		right: -90px
 	}
 }
 
@@ -569,22 +577,43 @@
 	.first p {
 		width: 360px;
 	}
+	#pic_1,
+	#pic_2,
+	#pic_3,
+	#pic_4,
+	#pic_5,
+	#pic_6 {
+		right: -60px;
+		width: 400px;
+		bottom: -80px;
+		top: auto;
+
+	}
+
 	#end {
 		padding-top: 110px;
 		height: auto;
 		position: relative;
 	}
+
 	#end .container {
 		height: auto;
-		overflow: hidden;
+		overflow: visible;
 		/*		position: relative;*/
 	}
+
+	#end_pic_2 {
+		top: -257px;
+		left: -171px;
+	}
+
 	.left_container {
 		display: block;
 		position: relative;
 		z-index: 5;
 		text-align: left;
 	}
+
 	#janna {
 		position: relative;
 		display: block;
@@ -594,6 +623,7 @@
 		left: 0;
 		right: 0;
 	}
+
 	#janna_back {
 		top: auto;
 		right: 0;
@@ -601,6 +631,7 @@
 		bottom: 0;
 		height: auto;
 	}
+
 }
 
 @media screen and (max-width: 740px) {
@@ -613,6 +644,7 @@
 	.first p,
 	h1 {
 		width: auto;
+		text-align: center;
 	}
 	.first {
 		min-height: auto;
@@ -641,11 +673,49 @@
 		margin: 0 auto;
 		bottom: -40px;
 	}
+	#main .janna_title {
+		margin: 0 auto;
+	}
+	.first h1 {
+		margin: 0 auto 35px
+	}
+	#pic_1,
+	#pic_2,
+	#pic_3,
+	#pic_4,
+	#pic_5,
+	#pic_6 {
+		left: 0;
+		right: 0;
+	}
+}
+
+@media screen and (max-width: 632px) {
+	#main_pic,
+	#main_shape {
+		width: 100%;
+	}
 }
 
 @media screen and (max-width: 525px) {
 	.mail,
 	.form_newsletter .button {
+		width: 100%;
+		min-width: auto;
+	}
+}
+
+@media screen and (max-width: 490px) {
+	#main .janna_title {
+		font-size: 14px;
+		width: 100%;
+		height: 45px;
+		line-height: 45px;
+	}
+	.button,
+	.button_finish,
+	#main + .second .button {
+		min-width: auto;
 		width: 100%;
 	}
 }
@@ -666,6 +736,7 @@
 
 	}
 	#main .pre {
+		margin-top: 30px;
 		margin-bottom: 0;
 	}
 	#main h1 {
@@ -697,14 +768,21 @@
 		line-height: 1.2;
 	}
 	.button,
-	.button:focus {
+	.button:hover,
+	.button:focus,
+	.button_finish {
 		width: 100%;
 		margin-top: 30px;
-		font-size: 24px;
+		font-size: 18px;
+		height: auto;
+		letter-spacing: normal;
 	}
 
 	#end {
-		padding-top: 150px;
+		padding-top: 130px;
+	}
+	.first h1 {
+		margin-top: 30px;
 	}
 	#end h1 {
 		font-size: 34px;
@@ -714,6 +792,7 @@
 	}
 	#end .pre {
 		text-align: center;
+		font-size: 18px;
 	}
 	.form_newsletter {
 		margin-top: 20px;
@@ -721,5 +800,29 @@
 	#janna,
 	#janna_back {
 		width: 100%;
+	}
+	.mail {
+		font-size: 17px;
+		height: 50px;
+		line-height: 50px;
+	}
+	.form_newsletter .button,
+	.form_newsletter .button:hover {
+		font-size: 18px;
+		height: auto;
+		line-height: 1.3;
+		padding: 10px;
+		min-height: 70px;
+		letter-spacing: normal;
+		margin-top: 20px;
+	}
+	#end .pre,
+	#end .infront_submit {
+		font-size: 18px;
+		text-align: center;
+		line-height: 1.3 margin-bottom: 30px;
+	}
+	#main .janna_title {
+		margin-top: 25px;
 	}
 }
